@@ -5,13 +5,18 @@ package fr.lenabec.bluetoothwrapper;
  */
 public class Command {
 
-    CommandType type;
+    CommandType mType;
     byte[] mCommand;
+
+    public Command(CommandType type, byte[] command) {
+        mType = type;
+        mCommand = command;
+    }
 
     public byte[] getCommand() { return mCommand; }
     public int getReplyLength() { return 0; }
 
     public CommandType getType() {
-        return type;
+        return mType;
     }
 }

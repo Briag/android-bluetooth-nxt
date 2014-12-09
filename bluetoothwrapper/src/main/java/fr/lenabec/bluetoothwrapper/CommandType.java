@@ -24,5 +24,4 @@ public enum CommandType {
     LSRead,
     GetCurrentProgramName,
     MessageRead
-
 }
